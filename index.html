@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // assignment ka pahla kam "User se ek number input lo, check karo number positive hai, negative"
+        pahlaKam = prompt("enter the favrate number ")
+
+        if(0 < pahlaKam){
+            alert("your number is posative")
+        }
+        else{
+            alert("your number is nagative ")
+        }
+
+
+        //assignment ka dosra kam "User ki age input lo aur check karo kya wo voter ban sakta hai (age ≥ 18)?"
+        dosraKam = prompt(alert("plees enter your age and than go for vote"),"Enter your age")
+        if(18 <= dosraKam){
+            alert("You are being allowed of being an  voter.")
+        }
+        else{
+            alert("You are not allowed to be a voter.")
+        }
+
+
+        //assignment ka teesra kam "User se 2 baar password lo, agar dono same hain to "Correct", warna "Incorrect"."
+        teesraKam = prompt('Enter the new password')
+        teesraKam_1 = prompt("Conform your password")
+        if(teesraKam == teesraKam_1){
+            alert("Your password has been reset.")
+        }
+        else{
+            alert("Your password has not been reset because your password does not match.")
+        }
+
+
+        //assignment ka chootah kam "User ke marks input lo, agar 80 ya zyada hon to Grade A ka message do."
+        chootahKam = prompt("enter your persant age  of gread result ")
+        if(chootahKam >= 80){
+            alert("You are best student and your result is A Gread very nice")
+        } else if (80>chootahKam) {
+            alert("Your result is batter")
+        } else if (50>chootahKam) {
+            alert("Your result is very poor and your a darty boy")
+        } else{
+            alert("Your result is very poor and your a darty boy")
+        }        
+
+
+        //assignment ka panchwa kam "Temperature input lo, agar wo 35 se zyada ho to "Garmi zyada hai" print karo."
+        panchwaKam = prompt("what is the tamprature of today?")
+        if (35 < panchwaKam){
+            alert("Today wather is very hot")
+        } else if (20 <= panchwaKam) {
+            alert("Today wather is hot")
+        } else if (10 <= panchwaKam) {
+            alert("Today wather is normal")
+        } else if (0 <= panchwaKam){
+            alert("Today wather is cool")
+        } else{
+            alert("Today wather is very cool and ice seso")
+        }
+
+
+        //assignment ka chatta kam "User ka naam input lo, agar wo "Ahmed" ho to welcome message do."
+        students  = ["abdullah","musab", "nasir", "owais"]
+        studentsName = prompt("Enter your name")
+        if (students[0] == studentsName || students[1] == studentsName || students[2] == studentsName || students[3] == studentsName ) {
+            prasentation = prompt("Enter your presantation: A meen is absent and P meen is prasent and Write text capitle later (A and P)")
+            if ("P" == prasentation) {
+                alert(`Today ${studentsName} is prasent`)
+            } else if ("A" == prasentation){
+                alert(`Today ${studentsName} is absent`)
+            } else {
+                alert(`Today ${studentsName} is leave`)
+            }
+        } else {
+            alert(`This student ${studentsName} is not regestered`)
+        }
+    </script>
+</body>
+</html>
